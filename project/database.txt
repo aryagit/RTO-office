@@ -1,0 +1,2 @@
+16lemca001 mca
+create table signup(id numeric(4) primary key,email varchar(30),fname varchar(30),lname varchar(20),password(10));
