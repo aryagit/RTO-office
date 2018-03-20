@@ -1,0 +1,38 @@
+
+<html>
+<head>
+<style>
+#show-button { cursor: pointer; }
+#hide-button { cursor: pointer; display: none; }
+
+/*Some stylings to the buttons*/
+#show-button, #hide-button  { color: #fff; border-radius: 5px; padding: 10px 50px; }
+#show-button { background: #0703af; }
+#hide-button { background: #af2303; }
+</style>
+</head>
+<body>
+<div id="header-plugin"></div>
+
+<center style="margin-top: 50px">
+  <button id="show-button">Show button</button>
+  <button id="hide-button">Hide button</button>
+</center>
+<script>
+$( "#header-plugin" ).load( "https://vivinantony.github.io/header-plugin/", function() {
+	$("a.back-to-link").attr("href", "http://blog.thelittletechie.com/2014/06/how-to-make-button-disappear-onclick.html#tlt")  
+});
+
+$(document).ready(function() {
+  $("#show-button").click(function () {
+   $("#hide-button").show()
+   $("#show-button").hide()
+  });
+  $("#hide-button").click(function () {
+   $("#show-button").show()
+   $("#hide-button").hide()
+  });
+ });
+</script>
+</body>
+</html>

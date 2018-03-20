@@ -1,0 +1,3 @@
+SELECT fee.`class`,fee.`fee`,fee.`cess`,fee.`fee`+fee.`cess` tot FROM
+learners_class class inner join
+`learnersfee` fee on class.class=fee.class and class.learners_id=7
